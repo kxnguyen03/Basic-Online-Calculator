@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content="width = device-width, initial-scale = 1.0">
+        <title>Basic Online Calculator</title>
+        <link rel = "stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class = "calculator">
+            <form>
+                <div class = "screen">
+                    <input type = "text" name = "screen" readonly>
+                </div>
+                <div>
+                    <input type = "button" class = "number" id = "1" value = "1" onclick = "appendToDisplay('1')">
+                    <input type = "button" class = "number" id = "2" value = "2" onclick = "appendToDisplay('2')">
+                    <input type = "button" class = "number" id = "3" value = "3" onclick = "appendToDisplay('3')">
+                    <input type = "button" class = "operation" id = "+" value = "+" onclick = "appendToDisplay(' + ')">
+                </div>
+                <div>
+                    <input type = "button" class = "number" id = "4" value = "4" onclick = "appendToDisplay('4')">
+                    <input type = "button" class = "number" id = "5" value = "5" onclick = "appendToDisplay('5')">
+                    <input type = "button" class = "number" id = "6" value = "6" onclick = "appendToDisplay('6')">
+                    <input type = "button" class = "operation" id = "subtract" value = "-" onclick = "appendToDisplay(' - ') ">
+                </div>
+                <div>
+                    <input type = "button" class = "number" id = "7" value = "7" onclick = "appendToDisplay('7')">
+                    <input type = "button" class = "number" id = "8" value = "8" onclick = "appendToDisplay('8')">
+                    <input type = "button" class = "number" id = "9" value = "9" onclick = "appendToDisplay('9')">
+                    <input type = "button" class = "operation" id = "multiply" value = "*" onclick = "appendToDisplay(' * ')">
+                </div>
+                <div>
+                    <input type = "button" class = "clear" value = "C" onclick = "screen.value = '' ">
+                    <input type = "button" class = "number" id = "0" value = "0" onclick = "appendToDisplay('0')">
+                    <input type = "button" class = "operation" id = "equals" value = "=" onclick = "calculateResult()">
+                    <input type = "button" class = "operation" id = "divide" value = "/" onclick = "appendToDisplay(' / ')">
+                </div>
+            </form>
+           </div>
+        </div>    
+        <script src="script.js"></script>
+    </body>
+</html>

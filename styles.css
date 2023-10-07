@@ -1,0 +1,74 @@
+/* Overall Calculator Styles */
+* {
+
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.calculator{
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(211, 211, 211, 0.479), rgba(192, 192, 192, 0.745));
+    border: 2px;
+    border-color: silver;
+    border-style: groove;
+    border-radius: 10px;
+    display: flex;
+    height: 380px;
+    padding: 20px;
+    width: 270px;
+}
+
+/* Calculator Screen Styles */
+form .screen {
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin: 25px 10px;
+    width: 200px;
+}
+
+input[type = text]{
+    background: transparent;
+    background-image: linear-gradient(180deg, white, rgba(135, 207, 235, 0.8));
+    border: 2px;
+    border-color: black;
+    border-style: groove;
+    box-shadow: none;
+    flex: 1;
+    text-align: right;
+}
+
+/* Calculator Buttons Styles */
+input[type = button]{
+    border: 2px;
+    border-style: groove;
+    font-size: 20px;
+    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+input[type="button"]:hover{
+    background-color: rgb(19, 22, 24);
+}
+
+/* Number ("0-9") Styles */
+input[type="button"].number{
+    background-image: linear-gradient(180deg, white, rgb(192, 192, 192,0.8));
+    color: black;
+}
+
+/* Operation ("+, -, X, /") Styles */
+input[type="button"].operation{
+    background-image: linear-gradient(180deg, white, rgb(244, 135, 2,0.8));
+    color: white;
+}
+
+/* Clear ("C") Styles*/
+input[type="button"].clear{
+    background-image: linear-gradient(180deg, white, rgb(240, 23, 66));
+    color: white;
+}
